@@ -68,27 +68,64 @@
             color: #000;
             transform: translateY(-3px);
         }
+
+        /* Navigation */
         nav {
             position: fixed;
             top: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(10,10,10,0.9);
+            background: rgba(10,10,10,0.95);
+            backdrop-filter: blur(10px);
             padding: 12px 30px;
             border-radius: 50px;
             z-index: 100;
             box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            white-space: nowrap;
         }
         nav a {
             color: var(--text-light);
             text-decoration: none;
-            margin: 0 20px;
+            margin: 0 18px;
             font-weight: 500;
             transition: color 0.3s;
+            font-size: 1rem;
         }
         nav a:hover {
             color: var(--accent);
         }
+
+        /* Mobile Improvements */
+        @media (max-width: 768px) {
+            h1 { font-size: 3.2rem; }
+            .tagline { font-size: 1.1rem; }
+            .btn { padding: 14px 32px; font-size: 1rem; }
+
+            nav {
+                top: 15px;
+                padding: 10px 15px;
+                border-radius: 30px;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 0.92rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 10px 12px;
+                max-width: 92%;
+            }
+            nav a {
+                margin: 0 8px;
+                font-size: 0.88rem;
+            }
+            .hero {
+                min-height: 620px;
+            }
+        }
+
         section {
             padding: 120px 20px;
             max-width: 1000px;
@@ -125,11 +162,6 @@
             font-size: 1.8rem;
             margin: 0 15px;
             text-decoration: none;
-        }
-        @media (max-width: 768px) {
-            h1 { font-size: 3rem; }
-            nav { padding: 10px 15px; }
-            nav a { margin: 0 10px; font-size: 0.95rem; }
         }
     </style>
 </head>
