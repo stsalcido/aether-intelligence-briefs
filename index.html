@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aether Intelligence Briefs</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --accent: #facc15;
+            --text: #ffffff;
+            --text-light: #a3a3a3;
+        }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .hero {
+            height: 100vh;
+            min-height: 650px;
+            background: linear-gradient(rgba(10,10,10,0.92), rgba(10,10,10,0.92)), 
+                        url('https://i.ibb.co/Fq3JrWR4/neuralnetworkbackgroundimage-1.png') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .content {
+            max-width: 900px;
+            padding: 0 20px;
+            z-index: 2;
+        }
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin: 0 0 20px;
+            letter-spacing: -2px;
+        }
+        .tagline, .trust {
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            background: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: var(--accent);
+            color: #000;
+            transform: translateY(-3px);
+        }
+
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(10,10,10,0.95);
+            backdrop-filter: blur(10px);
+            padding: 12px 30px;
+            border-radius: 50px;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 16px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: var(--accent); }
+
+        /* Polished Form */
+        .form-section {
+            background: #111;
+            padding: 100px 20px;
+        }
+        form {
+            max-width: 720px;
+            margin: 0 auto;
+            display: grid;
+            gap: 24px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-light);
+        }
+        input, select, textarea {
+            background: #1a1a1a;
+            border: 1px solid #555;
+            color: white;
+            padding: 16px 18px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            width: 100%;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.15);
+        }
+        button[type="submit"] {
+            background: var(--accent);
+            color: #000;
+            font-weight: 700;
+            padding: 18px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.15rem;
+            margin-top: 10px;
+        }
+        button[type="submit"]:hover {
+            background: #ffe066;
+        }
+
+        .success-message {
+            display: none;
+            background: #1a1a1a;
+            color: #4ade80;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 120px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .package {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#how">How It Works</a>
+        <a href="#packages">Our Packages</a>
+        <a href="#why">Why Aether Intelligence</a>
+        <a href="#contact">Get Your Brief</a>
+    </nav>
+
+    <header class="hero">
+        <div class="content">
+            <div style="color: #facc15; font-size: 1.1rem; letter-spacing: 4px; margin-bottom: 10px;">DEEP | SOURCED RESEARCH | DELIVERED FAST</div>
+            <h1>AETHER INTELLIGENCE<br>BRIEFS</h1>
+            <p class="tagline">Get Aether-Powered Custom Intelligence Briefs — Deep, Real-Time Research on Any High-Stakes Decision. Delivered Fast.</p>
+            <p class="trust">Fully sourced • Tool-verified • 24-48 hour delivery • Money-back guarantee on completion</p>
+            <a href="#packages" class="btn">GET YOUR CUSTOM BRIEF →</a>
+        </div>
+    </header>
+
+    <section id="how">
+        <h2>How It Works</h2>
+        <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <ol style="font-size: 1.2rem; line-height: 2.2; text-align: left; display: inline-block;">
+                <li><strong>1. Submit your request</strong> — Tell us the topic and your key questions.</li>
+                <li><strong>2. Choose a package & pay securely</strong></li>
+                <li><strong>3. Receive your professional brief</strong> — Polished PDF in 24-48 hours.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="packages" style="background: #111;">
+        <h2>Our Packages</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div class="package">
+                <h3>Quick Brief</h3>
+                <div class="price">$197</div>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ 8–12 page focused report</li>
+                    <li>✓ Answers 1–2 core questions</li>
+                </ul>
+            </div>
+            <div class="package" style="border-color: #facc15; box-shadow: 0 0 30px rgba(250,204,21,0.2);">
+                <h3>Full Intelligence Report</h3>
+                <div class="price">$497</div>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ 15–25 page comprehensive brief</li>
+                    <li>✓ Multi-source analysis & recommendations</li>
+                </ul>
+            </div>
+            <div class="package">
+                <h3>Deep Dive</h3>
+                <div class="price">$997</div>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ 25–40+ page enterprise report</li>
+                    <li>✓ Advanced data & scenario modeling</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="why">
+        <h2>Why Aether Intelligence</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.15rem;">
+            <p>Most research services rely on outdated reports. We’re different:</p>
+            <ul style="text-align: left; max-width: 600px; margin: 40px auto; line-height: 2;">
+                <li>✅ Real-time 2026 data from live tools</li>
+                <li>✅ 90%+ AI-powered efficiency for fast delivery</li>
+                <li>✅ Built for relocation, business validation & high-stakes decisions</li>
+                <li>✅ Fully cited and actionable</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Polished Form -->
+    <section class="form-section" id="contact">
+        <h2>Ready to Get Your Brief?</h2>
+        <form action="https://formspree.io/f/mnjokwgz" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="package">Preferred Package</label>
+            <select id="package" name="package" required>
+                <option value="">Select a package</option>
+                <option value="Quick Brief - $197">Quick Brief — $197</option>
+                <option value="Full Intelligence Report - $497">Full Intelligence Report — $497</option>
+                <option value="Deep Dive - $997">Deep Dive — $997</option>
+            </select>
+
+            <label for="topic">Topic & Key Questions</label>
+            <textarea id="topic" name="topic" rows="8" 
+                placeholder="Example: I need a relocation analysis from Hayward, CA to Chattanooga, TN. Compare cost of living, internet speeds, taxes, quality of life, and any incentives for tech professionals..." 
+                required></textarea>
+
+            <button type="submit">Submit My Request</button>
+        </form>
+
+        <!-- Success Message -->
+        <div id="success" class="success-message">
+            ✅ Thank you! I've received your request. I'll review it and reply within 24 hours with next steps and payment details.
+        </div>
+    </section>
+
+    <footer>
+        <p>Aether Intelligence Briefs — Premium custom research powered by advanced real-time tools</p>
+        <p style="margin-top: 40px; font-size: 0.9rem;">© 2026 Aether Intelligence Briefs. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Show success message after Formspree submission
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('submitted') === '1') {
+            document.getElementById('success').style.display = 'block';
+            // Scroll to success message
+            document.getElementById('success').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
