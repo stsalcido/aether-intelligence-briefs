@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aether Intelligence Briefs</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --accent: #facc15;
+            --text: #ffffff;
+            --text-light: #a3a3a3;
+        }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .hero {
+            height: 100vh;
+            min-height: 650px;
+            background: linear-gradient(rgba(10,10,10,0.92), rgba(10,10,10,0.92)), 
+                        url('https://i.ibb.co/Fq3JrWR4/neuralnetworkbackgroundimage-1.png') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .content {
+            max-width: 900px;
+            padding: 0 20px;
+            z-index: 2;
+        }
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin: 0 0 20px;
+            letter-spacing: -2px;
+        }
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+        .trust {
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            background: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: var(--accent);
+            color: #000;
+            transform: translateY(-3px);
+        }
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(10,10,10,0.9);
+            padding: 12px 30px;
+            border-radius: 50px;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        section {
+            padding: 120px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .package {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        .package:hover {
+            transform: translateY(-10px);
+        }
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-light);
+        }
+        .social a {
+            color: var(--accent);
+            font-size: 1.8rem;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            nav { padding: 10px 15px; }
+            nav a { margin: 0 10px; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#how">How It Works</a>
+        <a href="#packages">Our Packages</a>
+        <a href="#why">Why Aether Intelligence</a>
+    </nav>
+
+    <header class="hero">
+        <div class="content">
+            <div style="color: #facc15; font-size: 1.1rem; letter-spacing: 4px; margin-bottom: 10px;">DEEP | SOURCED RESEARCH | DELIVERED FAST</div>
+            <h1>AETHER INTELLIGENCE<br>BRIEFS</h1>
+            <p class="tagline">Get Aether-Powered Custom Intelligence Briefs — Deep, Real-Time Research on Any High-Stakes Decision. Delivered Fast.</p>
+            <p class="trust">Fully sourced • Tool-verified • 24-48 hour delivery • Money-back guarantee on completion</p>
+            <a href="#packages" class="btn">GET YOUR CUSTOM BRIEF →</a>
+        </div>
+    </header>
+
+    <section id="how">
+        <h2>How It Works</h2>
+        <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <ol style="font-size: 1.2rem; line-height: 2.2; text-align: left; display: inline-block;">
+                <li><strong>1. Submit your request</strong> — Tell us the topic (e.g., relocation analysis, business idea validation, competitor intel) and your key questions.</li>
+                <li><strong>2. Choose a package & pay securely</strong> — Simple one-time payment.</li>
+                <li><strong>3. Receive your professional brief</strong> — Get a polished, cited PDF with executive summary, data, insights, pros/cons, and actionable recommendations in 24-48 hours.</li>
+            </ol>
+            <p style="margin-top: 50px; color: #a3a3a3;">No meetings. No endless research. Just high-value intelligence delivered fast.</p>
+        </div>
+    </section>
+
+    <section id="packages" style="background: #111;">
+        <h2>Our Packages</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div class="package">
+                <h3>Quick Brief</h3>
+                <div class="price">$197</div>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ 8–12 page focused report</li>
+                    <li>✓ Answers 1–2 core questions</li>
+                    <li>✓ Key sources & summary</li>
+                    <li>✓ Ideal for quick decisions</li>
+                </ul>
+                <a href="#" class="btn" style="margin-top: 30px; display: block; text-align: center;">Choose Quick Brief</a>
+            </div>
+
+            <div class="package" style="border-color: #facc15; box-shadow: 0 0 30px rgba(250,204,21,0.2);">
+                <h3>Full Intelligence Report</h3>
+                <div class="price">$497</div>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ 15–25 page comprehensive brief</li>
+                    <li>✓ Multi-source analysis & comparisons</li>
+                    <li>✓ Risks, rewards & recommendations</li>
+                    <li>✓ Perfect for relocation or business validation</li>
+                </ul>
+                <a href="#" class="btn" style="margin-top: 30px; display: block; text-align: center;">Choose Full Report</a>
+            </div>
+
+            <div class="package">
+                <h3>Deep Dive</h3>
+                <div class="price">$997</div>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ 25–40+ page enterprise-level report</li>
+                    <li>✓ Advanced data pulls & scenario modeling</li>
+                    <li>✓ Ongoing update option available</li>
+                    <li>✓ For complex high-stakes decisions</li>
+                </ul>
+                <a href="#" class="btn" style="margin-top: 30px; display: block; text-align: center;">Choose Deep Dive</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="why">
+        <h2>Why Aether Intelligence</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.15rem;">
+            <p>Most research services rely on outdated reports or manual searches. We’re different:</p>
+            <ul style="text-align: left; max-width: 600px; margin: 40px auto; line-height: 2;">
+                <li>✅ <strong>Real-time 2026 data</strong> — Fresh insights from live web searches and advanced tools.</li>
+                <li>✅ <strong>High-efficiency delivery</strong> — 90%+ of the heavy research is powered by advanced AI, keeping quality high and prices reasonable.</li>
+                <li>✅ <strong>Built for real moves</strong> — Relocation planning, business validation, competitor analysis — whatever high-stakes decision you're facing.</li>
+                <li>✅ <strong>Actionable & fully cited</strong> — Clear recommendations and verifiable sources.</li>
+            </ul>
+            <p>This service is designed to help you cut through the noise and move toward a more focused, low-distraction environment.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p style="margin-bottom: 20px;">Aether Intelligence Briefs — Premium custom research powered by advanced real-time tools</p>
+        <div class="social">
+            <a href="#">📸</a>
+            <a href="#">📘</a>
+            <a href="#">🔗</a>
+            <a href="#">🐦</a>
+            <a href="#">✉️</a>
+        </div>
+        <p style="margin-top: 40px; font-size: 0.9rem;">© 2026 Aether Intelligence Briefs. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
